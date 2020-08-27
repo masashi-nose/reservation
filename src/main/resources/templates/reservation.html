@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="container">
+		<h1 style="text-align: center;">
+			沼垂テラス商店街視察<br>予約受付フォーム
+		</h1>
+		<div style="margin-left: 61%;">
+			<a href="">視察内容について</a>
+		</div>
+		<table border="1" style="margin-left: auto; margin-right: auto;">
+			<tbody>
+				<tr>
+					<td>予約団体名</td>
+					<td><input type="text" name="name" required="required"></td>
+				</tr>
+				<tr>
+					<td>代表者名</td>
+					<td><input type="text" name="representative"
+						required="required"></td>
+				</tr>
+				<tr>
+					<td>請求書宛名（任意）</td>
+					<td><input type="text" name="bill_name"></td>
+				</tr>
+				<tr>
+					<td>領収書宛名（任意）</td>
+					<td><input type="text" name="receipt_name"></td>
+				</tr>
+				<tr>
+					<td>人数</td>
+					<td><input type="text" name="people" required="required"></td>
+				</tr>
+				<tr>
+					<td>住所</td>
+					<td>〒&nbsp;<input type="text" name="zipcode"
+						required="required">
+						<button type="button">住所検索</button> <br> <input type="text"
+						required="required">
+					</td>
+				</tr>
+				<tr>
+					<td>メールアドレス</td>
+					<td><input type="email" name="email" required="required"></td>
+				</tr>
+				<tr>
+					<td>電話番号</td>
+					<td><input type="text" name="tel" required="required"></td>
+				</tr>
+				<tr>
+					<td>希望視察日時</td>
+					<td>第一希望：<input type="datetime-local" name="datetime1"
+						required="required"><br> 第二希望：<input
+						type="datetime-local" name="datetime2" required="required"><br>
+						第三希望：<input type="datetime-local" name="datetime3"
+						required="required"></td>
+				</tr>
+				<tr>
+					<td>オプション選択</td>
+					<td><input type="checkbox" name="tour">商店街案内<br>
+						<input type="checkbox" name="presentation">プレゼンテーション<br>
+						<input type="checkbox" name="presentation">視察資料（ブックレット）&nbsp;&nbsp;
+						<input type="number">&nbsp;部</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<div style="text-align: center;">
+			<h3>金額（※確定ではありません。）：〇〇円</h3>
+			<button type="button">確認</button>
+			<button type="reset">入力内容を取り消す</button>
+		</div>
+		<br>
+		<br>
+		<footer style="text-align: center;">©terrace office co.,ltd.</footer>
+	</div>
+</body>
+</html>
