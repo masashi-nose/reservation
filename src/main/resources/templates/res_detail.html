@@ -5,6 +5,81 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<h1 style="text-align: center;">予約団体詳細画面</h1>
+	<div style="margin-left: 56.5%;">
+		<button type="button">請求書を発行</button>
+		<button type="button">領収書を発行</button>
+	</div>
+	<br>
+	<table border="1" style="margin-left: auto; margin-right: auto;">
+		<tbody>
+			<tr>
+				<td>予約団体名</td>
+				<td><input type="text" name="name" required="required"
+					value="株式会社マチテラス"></td>
+			</tr>
+			<tr>
+				<td>代表者名</td>
+				<td><input type="text" name="representative"
+					required="required" value="大竹信也"></td>
+			</tr>
+			<tr>
+				<td>請求書宛名（任意）</td>
+				<td><input type="text" name="bill_name" value="株式会社マチテラス"></td>
+			</tr>
+			<tr>
+				<td>領収書宛名（任意）</td>
+				<td><input type="text" name="receipt_name" value="株式会社マチテラス"></td>
+			</tr>
+			<tr>
+				<td>人数</td>
+				<td><input type="text" name="people" required="required"
+					value="8名"></td>
+			</tr>
+			<tr>
+				<td>住所</td>
+				<td>〒&nbsp;<input type="text" name="zipcode"
+					required="required" value="9500075">
+					<button type="button">住所検索</button> <br> <input type="text"
+					required="required" value="新潟県新潟市中央区沼垂東3-5-22">
+				</td>
+			</tr>
+			<tr>
+				<td>メールアドレス</td>
+				<td><input type="email" name="email" required="required"
+					value="terrace@gmail.com"></td>
+			</tr>
+			<tr>
+				<td>電話番号</td>
+				<td><input type="text" name="tel" required="required"
+					value="09099993333"></td>
+			</tr>
+			<tr>
+				<td>希望視察日時</td>
+				<td>第一希望：<input type="datetime-local" name="datetime1"
+					required="required" value="2020-10-01T19:30"><br>
+					第二希望：<input type="datetime-local" name="datetime2"
+					required="required" value="2020-10-03T10:00"><br>
+					第三希望：<input type="datetime-local" name="datetime3"
+					required="required" value="2020-10-05T10:00"></td>
+			</tr>
+			<tr>
+				<td>オプション選択</td>
+				<td><input type="checkbox" name="tour" checked="checked">商店街案内<br>
+					<input type="checkbox" name="presentation" checked="checked">プレゼンテーション<br>
+					<input type="checkbox" name="presentation" checked="checked">視察資料（ブックレット）&nbsp;&nbsp;
+					<input type="number" value="8">&nbsp;部</td>
+			</tr>
+		</tbody>
+	</table>
+	<div style="text-align: center;">
+		<h3>金額（※確定ではありません。）：〇〇円</h3>
+		<button type="button">変更を保存</button>
+		<button type="reset">この予約を削除する</button>
+	</div>
+	<br>
+	<br>
+	<footer style="text-align: center;">©terrace office co.,ltd.</footer>
 
 </body>
 </html>
